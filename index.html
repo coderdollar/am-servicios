@@ -5,10 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>AM Servicios de cosntrucción</title>
         <link rel="shortcut icon" href="./img/AM.png" type="image/x-icon">
-         <!-- Boostrap -->
-         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-         <!-- Boostrap icons -->
-         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> 
+        <!-- Boostrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <!-- Boostrap icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> 
         <!-- Styles CSS -->
         <link rel="stylesheet" href="./css/style.css">
     </head>
@@ -42,21 +42,34 @@
                 </div>
 
                 <!--Menu-->
-                <div class="menu-listing">
-                    <a href="./index.html"><img class="logo" src="./img/logo_am.svg" alt="Logotipo" height="50px"></a>
-
-                    <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
-                    <nav class="nav" id="nav">
-                        <button class="cerrar-menu" id="cerrar"><i class="bi bi-x-lg"></i></button>
-                        <ul class="nav-list">
-                            <li><a href="index.html">Inicio</a></li>
-                            <li><a href="./pages/nosotros.html">¿Quiénes somos?</a></li>
-                            <li><a href="./pages/proyectos.html">Proyectos</a></li>
-                            <li><a href="./pages/galeria.html">Galeria</a></li>
-                            <li><a href="./pages/contacto.html">Contacto</a></li>
+                <nav class="navbar navbar-expand-lg bg-body-tertiary barra">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#"><img class="logoam" src="./img/logo_am.png" alt=""></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                    </div>  
+            
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="./pages/proyectos.html">Proyectos</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="./pages/galeria.html">Galeria</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                            </li>
                         </ul>
-                    </nav>
-                </div>
+                    </div>
+                </nav>
             </header>
 
             <!-- Sección1 -->
@@ -65,8 +78,12 @@
                  <div class="banner">
                         <h1>Servicios de diseño, construcción, interiores e inmobiliario</h1>
                     </div>
+                </section>    
+            
+            <!-- Sección 1.1 -->
+                <section>
                     <div class="blackblock">
-                        <h3>Contáctanos y recibe una cotización sin costo</h3>
+                        <p>Cotiza tu proyecto sin costo</p>
                         <a href="./pages/contacto.html">Solicitar cotización</a>
                     </div>
                 </section>
@@ -180,13 +197,18 @@
                 <div class="contenedor-footer">
                     <div class="footer-cardsa">
                         <p>NOSOTROS</p>
-                        
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quibusdam perferendis dolorum illo, fuga in?</p>
+                        <img class="yellow-line" src="./img/yellow-line.svg" alt="">
+                        <br>
+                        <img class="logo-white" src="./img/logo_white.png" alt="logotipo">
+                        <br>
+                        <br>
+                        <p class="texto-footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quibusdam perferendis dolorum illo, fuga in? Similique quibusdam perferendis dolorum illo, fuga in</p>
                     </div>
 
                     <div class="footer-cardsb">
                         <p class="text2">SERVICIOS</p>
-                      
+                        <img class="yellow-line" src="./img/yellow-line.svg" alt="">
+                        <br>
                         <ul class="buttons-footer">
                             <li class="button1">Construcción</li>
                             <li class="button1">Naves</li>
@@ -200,7 +222,8 @@
 
                     <div class="footer-cardsc">
                         <p>GALERIA</p>
-                      
+                        <img class="yellow-line" src="./img/yellow-line.svg" alt="">
+                        <br>
                         <div class="grilla-footer">
                             <img class="img-gallery" src="./img/footer1.jpg" alt="">
                             <img class="img-gallery" src="./img/footer2.jpg" alt="">
@@ -215,8 +238,9 @@
 
                     <div class="footer-cardsd">
                         <p>OFICINAS</p>
-                        
-                        <p>Contáctanos o visítanos en nuestras instalaciones:</p>
+                        <img class="yellow-line" src="./img/yellow-line.svg" alt="">
+                        <br>
+                        <p class="texto-footer">Contáctanos o visítanos en nuestras instalaciones:</p>
                         <div>
                             <i class="bi bi-telephone-fill icon1"></i>
                             <a class="ancla-footer" href="#">+51 55 1234 5678</a>
@@ -236,7 +260,7 @@
                     </div>
                 </div>
                 <div class="bottom-footer">
-                    <p class="h5">© Copyright 2023. "AM Servicios" by Grupo BAS. All rights reserved</p>
+                    <p>© Copyright 2023. "AM Servicios" by Grupo BAS. All rights reserved</p>
                 </div>
             </footer>
             

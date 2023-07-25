@@ -44,7 +44,6 @@
     grid-area: hours;
 }
 
-
 .encabezado-right{
     display: flex;
     gap: 1rem;
@@ -64,43 +63,21 @@
 }
 
 .icon1{
-    color: #fdc137
+    color: #fdc137;
 }
 
-/* Menu */
-.menu-listing {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
+/* Menu con Bootstrap*/
 
+.barra{
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    background-color: white;
-
-    padding-top: 20px;
-    padding-bottom: 20px;
     padding-inline: 5%;
-    
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
-.nav-list {
-    list-style-type: none;
-    display: flex;
-    gap: 1.5rem;
-}
-
-.nav-list li a{
-    color: gray;
-    text-decoration: none;
-}
-
-.nav-list li a:hover{
-    color: #113a58;
-}
-
-.abrir-menu,
-.cerrar-menu{
-    display: none;
+.logoam{
+    max-width: 80px;
 }
 
 .sticky{
@@ -109,6 +86,7 @@
 }
 
 /* Index sections */
+
 /* Section1 */
 .banner{
     display: flex;
@@ -130,27 +108,25 @@
 .banner h1{
     color: white;
     font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
-    border: solid;
-    padding: 1.5rem;
+    font-size: 2.5rem;
     text-align: center;
 }
 
+/* Sección 1.1 */
 .blackblock{
-    display: flex;
-    flex-wrap: wrap;
+    color: white;
     background-color: #333333;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 2rem;
 }
 
-.blackblock h3{
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    text-size-adjust: 30px;
+.blackblock p{
+    font-size: 1.5rem;
 }
 
 .blackblock a{
@@ -159,8 +135,8 @@
     font-family: 'Montserrat', sans-serif;
     border: solid;
     padding-inline: 1.5rem;
-    padding-top: .7rem;
-    padding-bottom: .7rem;
+    padding-top: .4rem;
+    padding-bottom: .4rem;
     border-radius: 5rem;
 }
 
@@ -218,11 +194,16 @@
     font-family: 'Montserrat', sans-serif;
     color: white;
     padding: 5%;
-    display: flex;
-    gap: 2em; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr;
+    grid-template-areas:
+        "left right";
+    gap: 1rem; 
 }
 
 .container-left{
+    grid-area: left;
     font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-wrap: wrap;
@@ -275,6 +256,7 @@
 }
 
 .container-right{
+    grid-area: right;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -330,6 +312,18 @@
     padding-inline: 5%;
 }
 
+.texto-footer{
+    font-size: 14px;
+}
+
+.logo-white{
+    width: 70%;
+}
+
+.yellow-line{
+    width: 20%;
+    padding-bottom: 2rem;
+}
 
 .footer-cardsa{
     grid-area: nos;
@@ -399,7 +393,7 @@
     background-color: black;
     font-family: 'Montserrat', sans-serif;
     color: white;
-    font-size: 13px;
+    font-size: 11px;
     text-align: center;
     padding-top: 1.7rem;
     padding-bottom: 1.7rem;
@@ -455,8 +449,19 @@
 }
 
 
-/* CSS projectos */
-.contenedorproyectos{
+/* CSS proyectos */
+
+.contenedor-proyectos{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-inline: 5%;
+}
+
+.cartin{
+    border: none;
+    z-index: -1;
+}
+/* .contenedorproyectos{
     font-family: 'Montserrat', sans-serif;
     padding-left: 5%;
     padding-right: 5%;
@@ -499,7 +504,7 @@
 
 .text-card3{
     grid-area: txt3;
-}
+} */
 
 
 /* CSS Galeria */
@@ -565,61 +570,44 @@
 
 /* CSS contacto */
 .containerform{
-    display: flex;
-    flex-wrap: wrap;
-    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "texti texti form form form";
+    gap: 1.5rem;
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
+.correo{
+    z-index: -1;
+}
 
 .text-contact{
-    width: 50%;
+    grid-area: texti;
 }
 
-.formulario{
-    width: 50%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: 
-        "name    email   phone"
-        "message message message"
-        "message message message"
-        "message message message"
-        "terms    0       0"
-        "button     0       0";
+.formula{
+    grid-area: form;
 }
 
-.name{
-    grid-area: name;
+.blackcontainera{
+    background-color: #333333;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
 }
 
-.email{
-    grid-area: email;
-}
-
-.phone{
-    grid-area: phone;
-}
-
-.message{
-    grid-area: message;
-}
-
-.terms{
-    grid-area: terms;
-}
-
-.button{
-    grid-area: button;
-}
 
 /* Media quiries */
 
-    /* Header */
+    /* Encabezado */
     @media screen and (max-width: 650px){
         
         .encabezado{
@@ -638,52 +626,24 @@
                 "hours";
             gap: .5rem;
         }
-
     }
 
-    @media screen and (max-width: 742px) {
-        .abrir-menu,
-        .cerrar-menu {
-            display: block;
-            border: 0;
-            font-size: 2rem;
-            background-color: transparent;
-            cursor: pointer;
-        }
-
-        .nav{
-            opacity: 0;
-            visibility: hidden;
-
-            display: flex;
-            flex-direction: column;
-            align-items: end;
-            gap: 1rem;
-            position: absolute;
-            top: 3.5rem;
-            right: 0;
-            bottom: 0;
-            background-color: white;
-            padding: 1rem;
-            box-shadow: 0 0 0 100vmax rgb(0, 0, 0, .5);
-            z-index: 1;
-        }
-
-        .nav.visible{
-            opacity: 1;
-            visibility: visible;
-        }    
-
-        .nav-list{
-            flex-direction: column;
-            align-items: end;
+    /* Banner */
+    @media screen and (max-width: 320px){
+        .banner h1{
+            font-size: 1.5rem;
         }
     }
 
-    @media screen and (max-width: 650px) {
+    /* Sección 3 */
 
-        .nav{
-            top: 7.8rem;
+    @media screen and (max-width: 700px){
+        .general-container{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+                "left"
+                "right";
         }
     }
 
@@ -766,4 +726,21 @@
         "gal9";
     }
     
+}
+
+/* Contacto */
+
+@media screen and (max-width: 775px){
+    .containerform{
+        grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "texti" 
+        "texti"
+        "form" 
+        "form" 
+        "form";
+    gap: 0rem;
+    }
+
 }
