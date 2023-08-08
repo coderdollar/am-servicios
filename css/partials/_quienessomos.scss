@@ -1,0 +1,141 @@
+.blackblock h3{
+    font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imagen-nosotros{
+    width: 100%vw;
+}
+
+.contenedornosotros{
+    font-family: $mainfont;
+    padding-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "izq    der";
+
+    gap: 2rem;
+
+    @include contenedornosotros {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            "izq"
+            "der";
+    }
+    
+    .contenedorizq{
+        background-color: $thirdColor;
+        color: white;
+        text-align: justify;
+        grid-area: izq;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-left: 10%;
+        padding-right: 8%;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+
+        .divider{
+            width: 15%;
+            margin-top: .6rem;
+            margin-bottom: 1.2rem;
+        }
+
+    }
+
+    .contenedorder{
+        grid-area: der;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-top: 2rem;
+        padding-left: 5%;
+        padding-right: 10%;
+
+        @include contenedorder{
+            padding-left: 10%;
+        }
+        
+        .divider-der{
+            width: 15%;
+            margin-bottom: .5rem;
+        }
+    }
+
+}
+
+.clientes{
+    background-color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5rem;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-inline: 7%;
+    border: solid;
+    border-color: #aaaaaa;
+    border-radius: 1rem;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+    .grid-clientes{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+            "cl1 cl2 cl3 cl4 cl5";
+        gap: 4rem;
+        
+        @include grid-clientes{
+            gap: 2rem;
+        }
+
+        @include grid-clientes1{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+                "cl1"
+                "cl2"
+                "cl3"
+                "cl4"
+                "cl5";
+            gap: 1rem;
+        }
+    }
+
+    .cl1{
+        grid-area: cl1;
+        width: 100%;
+    }
+
+    .cl2{
+        grid-area: cl2;
+        width: 100%;
+    }
+
+    .cl3{
+        grid-area: cl3;
+        width: 100%;
+    }
+
+    .cl4{
+        grid-area: cl4;
+        width: 100%;
+    }
+
+    .cl5{
+        grid-area: cl5;
+        width: 100%;
+    }
+}
+
+.exito{
+    display: flex;
+    justify-content: center;
+}

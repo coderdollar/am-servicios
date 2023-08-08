@@ -1,0 +1,53 @@
+.blackcontainera{
+    background-color: $mainColor;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.2rem;
+
+    .text-paragraph{
+        font-size: 1rem;
+    }
+
+}
+
+.containerform{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "texti texti form form form";
+    gap: 1.5rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @include containerform {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "texti" 
+            "texti"
+            "form" 
+            "form" 
+            "form";
+        gap: 0rem;
+    }
+
+    .text-contact{
+        grid-area: texti;
+    }
+
+    .formula{
+        grid-area: form;
+    }
+
+    .correo{
+        z-index: -1;
+    }
+}

@@ -1,0 +1,184 @@
+   /* Encabezado */
+//    @media screen and (max-width: 650px){
+        
+//     .encabezado{
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//         gap: .5rem;
+
+//         .encabezado-left{
+//             grid-template-columns: 1fr;
+//                 grid-template-rows: 1fr 1fr 1fr;
+//                 grid-template-areas:
+//                     "phone"
+//                     "mail"
+//                     "hours";
+//                 gap: .5rem;
+//         }
+//     }
+// }
+
+/* Banner */
+// @media screen and (max-width: 320px){
+//     .banner h1{
+//         font-size: 1.5rem;
+//     }
+// }
+
+/* Sección 3 */
+
+// @media screen and (max-width: 700px){
+//     .general-container{
+//         grid-template-columns: 1fr;
+//         grid-template-rows: 1fr 1fr;
+//         grid-template-areas:
+//             "left"
+//             "right";
+//     }
+// }
+
+/* footer */
+
+// @media screen and (max-width: 750px) {
+//     .contenedor-footer{
+//         display: grid;
+//         grid-template-columns: 1fr 1fr;
+//         grid-template-rows: 1fr 1fr;
+//         grid-template-areas: 
+//             "nos ser"
+//             "gal ofi";
+//     }
+// }  
+
+// @media screen and (max-width: 550px) {
+//     .contenedor-footer{
+//         display: grid;
+//         grid-template-columns: 1fr;
+//         grid-template-rows: 1fr 1fr 1fr 1fr;
+//         grid-template-areas: 
+//             "nos"
+//             "ser"
+//             "gal"
+//             "ofi";
+//     }
+// }   
+
+/* Nosotros */
+// @media screen and (max-width: 650px) {
+   
+// .contenedornosotros{
+//     grid-template-columns: 1fr;
+//     grid-template-rows: 1fr 1fr;
+//     grid-template-areas: 
+//         "izq"
+//         "der";
+    
+//         .contenedorder{
+//             padding-left: 10%;
+//         }
+
+//     }
+// }
+
+// @media screen and (max-width: 800px) {
+
+// .clientes{
+
+//     .grid-clientes{
+//         gap: 2rem;
+//     }
+
+//     }
+// }
+
+// @media screen and (max-width: 650px) {
+
+//     .clientes{
+    
+//         .grid-clientes{
+//             grid-template-columns: 1fr;
+//             grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+//             grid-template-areas: 
+//                 "cl1"
+//                 "cl2"
+//                 "cl3"
+//                 "cl4"
+//                 "cl5";
+//             gap: 1rem;
+            
+//         }
+    
+//         }
+//     }
+
+
+/* proyectos */
+
+// @media screen and (max-width: 800px) {
+
+// .contenedorproyectos{
+//     grid-template-columns: 1fr;
+//     grid-template-rows: repeat(6, 1fr);
+//     grid-template-areas:
+//         "img1"
+//         "txt1"
+//         "img2"
+//         "txt2"
+//         "img3"
+//         "txt3";
+// }
+
+// }
+
+/* galeria */
+
+// @media screen and (max-width: 800px) {
+
+// .containergallery{
+//     grid-template-columns: 1fr 1fr;
+//     grid-template-rows: repeat(5, 1fr);
+//     grid-template-areas:
+//     "gal1 gal2"
+//     "gal3 gal4"
+//     "gal5 gal6"
+//     "gal7 gal8"
+//     "gal9   0 ";
+// }
+
+// }
+
+// @media screen and (max-width: 450px) {
+
+// .containergallery{
+//     grid-template-columns: 1fr;
+//     grid-template-rows: repeat(9, 1fr);
+//     grid-template-areas:
+//     "gal1"
+//     "gal2"
+//     "gal3"
+//     "gal4"
+//     "gal5"
+//     "gal6"
+//     "gal7"
+//     "gal8"
+//     "gal9";
+// }
+
+// }
+
+/* Contacto */
+
+// @media screen and (max-width: 775px){
+// .containerform{
+//     grid-template-columns: 1fr;
+// grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+// grid-template-areas: 
+//     "texti" 
+//     "texti"
+//     "form" 
+//     "form" 
+//     "form";
+// gap: 0rem;
+// }
+// }

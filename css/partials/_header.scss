@@ -1,0 +1,97 @@
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+    /* Encabezado */
+    .encabezado{
+        font-family: $mainfont;
+        font-size: 12px;
+        background-color: $mainColor;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 5%;
+        padding-left: 5%;
+
+        @include encabezado{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: .5rem;
+        }
+
+        .encabezado-left{
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas:
+                "phone mail hours";
+            gap: 1.5rem;
+
+            @include encabezado-left{
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-template-areas:
+                    "phone"
+                    "mail"
+                    "hours";
+                gap: .5rem;
+            }
+
+            .phone{
+                grid-area: phone;
+            }
+            
+            .mail{
+                grid-area: mail;
+            }
+            
+            .hours{
+                grid-area: hours;
+            }
+    
+            .icon1{
+                color: $secondaryColor;
+            }
+        }
+        
+        
+
+        .encabezado-right{
+            display: flex;
+            gap: 1rem;
+        
+            .icon{
+                color: white;
+            }
+        }
+    }
+
+    .encabezado a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .encabezado a:hover{
+        color: $secondaryColor;
+    }
+
+    /* Menu con Bootstrap*/
+
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        padding-inline: 5%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+        .logoam{
+            max-width: 80px;
+        }  
+    }

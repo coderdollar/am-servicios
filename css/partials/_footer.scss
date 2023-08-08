@@ -1,0 +1,150 @@
+.contenedor-footer{
+    background-color: $thirdColor;
+    font-family: $mainfont;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "nos ser gal ofi";
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-inline: 5%;
+
+    @include contenedor-footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            "nos ser"
+            "gal ofi";
+    }
+
+    @include contenedor-footer1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "nos"
+            "ser"
+            "gal"
+            "ofi";
+    }
+
+    .footer-cardsa{
+        grid-area: nos;
+
+        p{
+            margin-bottom: 1rem;
+        }
+
+        .yellow-line{
+            width: 20%;
+            padding-bottom: 2rem;
+        }
+
+        .logo-white{
+            width: 70%;
+        }
+
+        .texto-footer{
+            font-size: 14px;
+        }
+        
+    }
+
+    .footer-cardsb{
+        grid-area: ser;
+
+        .yellow-line{
+            width: 20%;
+            padding-bottom: 2rem;
+        }
+
+        .buttons-footer{
+            list-style-type: none;
+            width: auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: .5rem;
+
+            .button1{
+                background-color: $mainColor;
+                font-size: 12px;
+                padding-inline: .7rem;
+                padding-top: .5rem;
+                padding-bottom: .5rem;
+                border-radius: .3rem;
+            }
+        }
+
+        .button1:hover{
+            background-color:$secondaryColor;
+            color: black;
+        }
+
+        p{
+            margin-bottom: 1rem;
+        }
+    }
+
+    .footer-cardsc{
+        grid-area: gal;
+
+        .yellow-line{
+            width: 20%;
+            padding-bottom: 2rem;
+        }
+
+        .grilla-footer{
+            display: flex;
+            flex-wrap: wrap;
+
+            .img-gallery{
+                width: 4rem;
+                margin: .1rem;
+            }
+        }
+
+        p{
+            margin-bottom: 1rem;
+        }
+    }
+    
+    .footer-cardsd{
+        grid-area: ofi;
+
+        .yellow-line{
+            width: 20%;
+            padding-bottom: 2rem;
+        }
+
+        .ancla-footer{
+            color: white;
+            text-decoration: none;
+            font-size: 12px;
+        }
+
+        .texto-footer{
+            font-size: 14px;
+        }
+
+        .icon1{
+            color: $secondaryColor;
+        }
+
+        p{
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.bottom-footer{
+    background-color: black;
+    font-family: $mainfont;
+    color: white;
+    font-size: 11px;
+    text-align: center;
+    padding-top: 1.7rem;
+    padding-bottom: 1.7rem;
+}

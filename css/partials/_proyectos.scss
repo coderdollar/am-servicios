@@ -1,0 +1,22 @@
+.contenedor-proyectos{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-inline: 5%;
+
+    @include contenedorproyectos{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas:
+            "img1"
+            "txt1"
+            "img2"
+            "txt2"
+            "img3"
+            "txt3";
+    }
+
+    .cartin{
+        border: none;
+        z-index: -1;
+    }
+}
